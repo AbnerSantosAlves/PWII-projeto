@@ -55,8 +55,7 @@ main {
 
 form {
     background-color: #ffffff;
-    padding: 20px;
-    padding-right: 30px;
+    padding: 30px 13px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -72,7 +71,7 @@ form {
 
 .input-group {
     flex: 1;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 label {
@@ -82,7 +81,7 @@ label {
 }
 
 input {
-    width: 300px;
+    width: 90%;
     padding: 8px;
     border: none;
     border-radius: 10px;
@@ -160,4 +159,18 @@ form input:hover{
 .logo-image img{
     width: 60px;
     margin-left: 20px;
+}
+
+textarea{
+    width: 90%;
+    height: 50px;
+    padding: 4px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #000000;
+    outline: none;
+}
+
+#cod-funcionario{
+    width: 42%;
 }

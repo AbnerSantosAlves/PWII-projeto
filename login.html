@@ -7,18 +7,45 @@
     <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
-        <div class="container">
-            <form action="" method="post" id="form">
-                    <h2>Login</h2>
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome"  required>
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" required>
-  
-        
-                    <input type="submit" id="entrar" value="Entrar">
-                    <button type="reset" id="limpar">Cancelar</button>
-            </form>
+    <header>
+        <div class="logo-image">
+            <img src="Logo (sem fundo).png" alt="Logo da empresa">
         </div>
+
+        <nav>
+            <a href="">Ínicio</a>
+            <a href="">Sobre nós</a>
+            <a href="">Contato</a>
+            <a href="" id="a-account">Não tenho uma conta</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="#">
+                <div class="form-header">
+                    <h1>Login</h1>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label for="email">Nome</label>
+                        <input id="email" type="email" placeholder="Digite seu nome" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label for="password">Senha</label>
+                        <input id="password" type="number" placeholder="Digite sua senha" required>
+                    </div>
+                </div>
+
+
+
+                <div class="continue-button">
+                    <button type="submit"><a href="">Continuar</a></button>
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
 </html>

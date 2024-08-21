@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Categoria e Lançamento</title>
+    <link rel="stylesheet" href="./css/despesas.css">
+</head>
+<body>
+    <header>
+        <div class="logo-image">
+            <img src="Logo (sem fundo).png" alt="Logo da empresa">
+        </div>
+
+        <nav>
+            <a href="">Ínicio</a>
+            <a href="">Sobre nós</a>
+            <a href="">Contato</a>
+            <a href="" id="a-account">Entrar</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="#">
+                <div class="form-header">
+                    <h1>Cadastro de Categoria e Lançamento</h1>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label for="nome">Nome da Categoria</label>
+                        <input id="nome" type="text" placeholder="Digite o nome da categoria" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="descricao-c">Descrição (categoria)</label>
+                        <textarea id="descricao-c" rows="4" cols="50" placeholder="Digite a descrição da categoria" required></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label for="number">Valor do lançamento</label>
+                        <input id="number" type="number" placeholder="Digite o valor do lançamento" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="descricao-l">Descrição (lançamento)</label>
+                        <textarea id="descricao-l" rows="4" cols="50" placeholder="Digite a descrição do lançamento" required></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label for="tipo">Tipo do lançamento</label>
+                        <input id="tipo" type="text" placeholder="Digite tipo do lançamento" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="data-lancamento">Data do Lançamento</label>
+                        <input id="data-lancamento" type="date" placeholder="Digite a data do lançamento" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label for="cod-funcionario">Código do Funcionário</label>
+                        <input id="cod-funcionario" type="number" placeholder="Digite o código do Funcionário" required>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button type="submit"><a href="">Continuar</a></button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

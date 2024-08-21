@@ -1,84 +1,160 @@
-body{
+* {
+    padding: 0;
     margin: 0;
-    display: flex;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #010125;
 }
 
-.container{
+body{ 
+    background-color: #111111;
+}
+
+header{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    width: 100%;
-    height: 100vh;
+    gap: 70px;
 }
 
-
-form{
-    background-color: #070709;
-    padding: 40px 60px;
-    width: 300px;
-    color: white;
-}
-
-form h2{
-    margin-top: 0;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-form label{
-    display: block;
-    margin-bottom: 5px;
-}
-
-form input{
-    width: 270px;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #413f3f;
-    outline: none;
-    border-radius: 5px;
-    background-color: rgb(37, 37, 37);
-    color: white;
-}
-
-
-#cadastrar{
+#a-account{
+    border: 1px solid #6c63ff;
     padding: 10px 20px;
-    background-color: rgb(241, 169, 13);
-    color: white;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-left: 40px;
-    width: 100px;
 }
 
-#limpar{
-    padding: 10px 20px; 
-    background-color: rgb(255, 255, 255);
-    color: rgb(39, 39, 39);
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-left: 20px;
+#a-account:hover{
+    background-color: #6c63ff;
+    color: white;
+    border: 1px solid #6c63ff;
+    padding: 10px 20px;
+    transition: 300ms;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
     font-weight: bold;
 }
 
-#cadastrar:hover{
-    background-color: rgb(209, 145, 8);
+nav a:hover{
+    color:#6c63ff;
 }
 
-#limpar:hover{
-    background-color: rgb(163, 156, 156);
+main {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.span{
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.input-group {
+    flex: 1;
+    margin: 0 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #000000;
+    outline: none;
+}
+
+
+.form-header{
+    margin-bottom: 50px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-header button{
+    background-color: #6c63ff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-header a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.form-header h1::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #6c63ff;
+    margin: 0 auto;
     position: absolute;
-    top: 46%;right: 36%;
-    color: red;
-    display: none;
+    border-radius: 10px;
+}
+
+.continue-button button{
+    margin-left: 20px;
+    background-color: #6c63ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.continue-button button:hover{
+    background-color: #5f58da;
+    transition: 300ms;
+}
+
+.form-header button:hover{
+    background-color: #5f58da;
+    transition: 300ms;
+}
+
+
+.continue-button a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+form input:hover{
+    background-color: #0000002f;
+}
+
+.logo-image img{
+    width: 60px;
+    margin-left: 20px;
 }

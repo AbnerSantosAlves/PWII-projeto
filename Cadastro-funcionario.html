@@ -7,26 +7,63 @@
     <link rel="stylesheet" href="./css/cadastro.css">
 </head>
 <body>
-    <div class="container">
-        <form action="" method="post" id="form">
-                <h2>Cadastro de Funcionário</h2>
-                <label for="nome">Nome</label>
-                <input type="text" name="nome"  required>
-                <label for="sobrenome">Sobrenome</label>
-                <input type="text" name="sobrenome" required>
-                <label for="dt_nascimento">Dt. Nascimento</label>
-                <input type="date" id="Data" name="dt_nascimento" required><br>
-                <label for="cargo">Cargo</label>
-                <input type="text" name="cargo">
-                <label for="salario">Salário</label>
-                <input type="number" min="0" name="salario" required>
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" required>
-    
-                <input type="submit" id="cadastrar" value="Cadastrar">
-                <button type="" id="limpar" onclick="limpar()">Limpar</button>
-                <span class="span" id="span">Data Invalida!!!!!</span>
-        </form>
-    </div>
-    <script src="./JS/script.js"></script>
+    <header>
+        <div class="logo-image">
+            <img src="Logo (sem fundo).png" alt="Logo da empresa">
+        </div>
+
+        <nav>
+            <a href="">Ínicio</a>
+            <a href="">Sobre nós</a>
+            <a href="">Contato</a>
+            <a href="" id="a-account">Já tenho uma conta</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="#">
+                <div class="form-header">
+                    <h1>Cadastro de Funcionário</h1>
+                    <button><a href="">entrar</a></button>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" placeholder="Digite seu primeiro nome" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" placeholder="Digite seu sobrenome" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label for="email">Data de nascimento</label>
+                        <input id="email" type="date" placeholder="Digite seu email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="number">Cargo</label>
+                        <input id="number" type="number" placeholder="Digite seu número" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label for="address">Salário</label>
+                        <input id="address" type="text" placeholder="Digite seu endereço" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="contact">Senha</label>
+                        <input id="contact" type="text" placeholder="Digite uma senha" required>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button type="submit"><a href="">Continuar</a></button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
 </html>
