@@ -21,41 +21,41 @@
     </header>
     <main>
         <section>
-            <form action="#">
+            <form action="./php/insert-funcionario.php" method="POST">
                 <div class="form-header">
                     <h1>Cadastro de Funcionário</h1>
                     <button><a href="">entrar</a></button>
                 </div>
                 <div class="row">
                     <div class="input-group">
-                        <label for="firstname">Primeiro Nome</label>
-                        <input id="firstname" type="text" placeholder="Digite seu primeiro nome" required>
+                        <label for="nome">Primeiro Nome</label>
+                        <input id="nome" name="nome" type="text" placeholder="Digite seu primeiro nome" required>
                     </div>
                     <div class="input-group">
-                        <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" placeholder="Digite seu sobrenome" required>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="input-group">
-                        <label for="email">Data de nascimento</label>
-                        <input id="email" type="date" placeholder="Digite seu email" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="number">Cargo</label>
-                        <input id="number" type="number" placeholder="Digite seu número" required>
+                        <label for="sobrenome">Sobrenome</label>
+                        <input id="sobrenome" name="sobrenome" type="text" placeholder="Digite seu sobrenome" required>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="input-group">
-                        <label for="address">Salário</label>
-                        <input id="address" type="text" placeholder="Digite seu endereço" required>
+                        <label for="dt_nascimento">Data de nascimento</label>
+                        <input id="dt_nascimento" name="dt_nascimento" type="date" placeholder="Digite seu email" required>
                     </div>
                     <div class="input-group">
-                        <label for="contact">Senha</label>
-                        <input id="contact" type="text" placeholder="Digite uma senha" required>
+                        <label for="cargo">Cargo</label>
+                        <input id="cargo" name="cargo" type="number" placeholder="Digite seu número" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label for="salario">Salário</label>
+                        <input id="salario" name="salario" type="text" placeholder="Digite seu endereço" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="senha">Senha</label>
+                        <input id="senha" name="senha" type="text" placeholder="Digite uma senha" required>
                     </div>
                 </div>
 
