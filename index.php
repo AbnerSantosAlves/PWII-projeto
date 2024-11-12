@@ -13,29 +13,27 @@
         </div>
 
         <nav>
-            <a href="">Ínicio</a>
-            <a href="">Sobre nós</a>
-            <a href="">Contato</a>
-            <a href="" id="a-account">Não tenho uma conta</a>
+            <a href=""></a>
+            <a href=""></a>
         </nav>
     </header>
     <main>
         <section>
-            <form action="#">
+            <form action="./php/logon.php" method="post">
                 <div class="form-header">
                     <h1>Login</h1>
                 </div>
 
                 <div class="row">
                     <div class="input-group">
-                        <label for="email">Nome</label>
-                        <input id="email" type="email" placeholder="Digite seu nome" required>
+                        <label for="text">Nome</label>
+                        <input id="text" name="name" type="text" placeholder="Digite seu nome" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-group">
                         <label for="password">Senha</label>
-                        <input id="password" type="number" placeholder="Digite sua senha" required>
+                        <input id="password" name="senha" type="number" placeholder="Digite sua senha" required>
                     </div>
                 </div>
 

@@ -13,10 +13,7 @@
         </div>
 
         <nav>
-            <a href="">Ínicio</a>
-            <a href="">Sobre nós</a>
-            <a href="">Contato</a>
-            <a href="" id="a-account">Já tenho uma conta</a>
+            <a href="./home.php">Voltar</a>
         </nav>
     </header>
     <main>
@@ -24,7 +21,6 @@
             <form action="./php/insert-funcionario.php" method="POST">
                 <div class="form-header">
                     <h1>Cadastro de Funcionário</h1>
-                    <button><a href="">entrar</a></button>
                 </div>
                 <div class="row">
                     <div class="input-group">
@@ -58,10 +54,18 @@
                         <input id="senha" name="senha" type="text" placeholder="Digite uma senha" required>
                     </div>
                 </div>
+                
+                <div class="row">
+                    <div class="input-group">
+                        <label for="dt_admissao">Data de admissão</label>
+                        <input id="dt_admissao" name="dt_admissao" type="date" placeholder="Digite seu email" required>
+                    </div>
+                </div>
 
                 <div class="continue-button">
                     <button type="submit"><a href="">Continuar</a></button>
                 </div>
+
             </form>
         </section>
     </main>

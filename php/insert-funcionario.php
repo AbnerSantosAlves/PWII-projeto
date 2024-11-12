@@ -1,25 +1,29 @@
 <?php
 $server = "localhost";
 $user = "root";
-$password = "root";
-$database = "BD_sistema";
+$password = "";
+$database = "bd_sistema";
 
-//Recebendo os dados do formulario
+// Recebendo os dados do formulário
 $nome = $_POST['nome'];
-$sobrenome = $_POST ['sobrenome'];
+$sobrenome = $_POST['sobrenome'];
 $dt_nascimento = $_POST['dt_nascimento'];
-$cargo = $_POST[ 'cargo'];
-$salario = $_POST[ 'salario'];
-$senha = $_POST ['senha'];
+$dt_admissao = $_POST['dt_admissao'];
+$cargo = $_POST['cargo'];
+$salario = $_POST['salario'];
+$senha = $_POST['senha'];
 
 include 'conexao.php';
-$insert_funcionario = "INSERT INTO tb_funcionario VALUES (null, '$nome', '$sobrenome', '$dt_nascimento', '$cargo', '$salario', '$senha');";
+
+// Inclui as colunas na consulta e adiciona a vírgula que faltava entre os valores
+$insert_funcionario = "INSERT INTO tb_funcionario (nm_funcionario, sobrenome, dt_nascimento, dt_admissao, cargo, salario, senha) 
+VALUES ('$nome', '$sobrenome', '$dt_nascimento', '$dt_admissao', '$cargo', '$salario', '$senha');";
 
 $resultado = $conexao->query($insert_funcionario);
+
 if ($resultado) {
-    echo "<script>alert('Inserido com sucesso'); history.back() </script>";
+    echo "<script>alert('Inserido com sucesso'); history.back()</script>";
+} else {
+    echo "Erro ao inserir funcionário: " . $conexao->error;
 }
-
-
 ?>
-

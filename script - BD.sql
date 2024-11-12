@@ -1,4 +1,4 @@
-create database bd_loja;
+create database bd_sistema;
 use bd_loja;
 
 create table tb_funcionario(
@@ -6,9 +6,9 @@ id_funcionario int primary key auto_increment,
 nm_funcionario varchar(45),
 sobrenome varchar(45),
 dt_nascimento date,
+dt_admissao date,
 cargo varchar(45),
 salario decimal,
-dt_admissao date,
 senha text
 );
 

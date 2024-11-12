@@ -1,24 +1,27 @@
 <?php
-//pegar os dados do formulario e armazenar na variavel
-$id_user = $_POST['id'];
-$senha = $_POST['senha'];
+session_start();
 
+$name_user = $_POST['name'];
+$senha = $_POST['senha'];
 
 include 'conexao.php';
 
-$select = "SELECT * FROM tb funcionario WHERE id funcionario = $id user";
+// Ajustando o nome do campo para "senha" de acordo com o banco de dados
+$select = "SELECT * FROM tb_funcionario WHERE nm_funcionario = '$name_user'";
 $query = $conexao->query($select);
-$resultado = $query->fetch_assoc();
 
-$id_user_banco = $resultado['id funcionario'];
-$id_senha_banco = $resultado['nm senha'];
+if ($query->num_rows > 0) {
+    $resultado = $query->fetch_assoc();
+    $senha_banco = $resultado['senha'];
 
-if ($id_user == $id_user_banco && $senha == $id_senha_banco) {
-    header('location: ../home.html');
+    if ($senha == $senha_banco) {
+        $_SESSION['nm_funcionario'] = $resultado['nm_funcionario'];
+        header('Location: ../home.php'); // Alterado para home.php
+        exit();
+    } else {
+        echo "<script>alert('Usuário ou senha inválidos'); history.back();</script>";
+    }
+} else {
+    echo "<script>alert('Usuário não encontrado'); history.back();</script>";
 }
-else{
-    echo "<script>alert('usuario ou senha invalida'); history.back() </script>";
-}  
-
-
 ?>
